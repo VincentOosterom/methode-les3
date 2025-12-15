@@ -1,22 +1,33 @@
 public class C_Oppervlakte {
 
     public static void main(String[] args) {
+
+
         int antwoord = 0;
-        // Uncomment de regels en maak een method die voor het juiste antwoord zorgt.
 
-        //antwoord = oppervlakteRechthoek(2, 8);
-        System.out.println("De oppervlakte van een rechthoek met lengte 2 en breedte 8 is " + antwoord);
+        int inhouddoos1 = Retangle(2, 8);
+        int inhouddoos2 = four(5, 5, 5, 5);
+        int inhouddoos3 = box(2, 8, 5);
 
-        //antwoord = oppervlakteVierkant(5); // Je kunt bij de implementatie van deze method een nieuwe berekening doen, of `oppervlakteRechthoek()` hergebruiken.
-        System.out.println("De oppervlakte van een vierkant met zijden van 5 cm is " + antwoord);
+        System.out.println("De oppervlakte van een rechthoek met lengte 2 en breedte 8  = " + inhouddoos1);
+        System.out.println("De oppervlakte van een vierkant met zijden van 5 cm = " + inhouddoos2 + "cm");
+        System.out.println("De oppervlakte van een doos met lengte 2, breedte 8 en hoogte 5 = " + inhouddoos3 + "m3");
 
-        //antwoord = oppervlakteDoos(2,8,5); // Je kunt bij de implementatie van deze method een nieuwe berekening doen, of `oppervlakteRechthoek()` hergebruiken.
-        System.out.println("De oppervlakte van een doos met lengte 2, breedte 8 en hoogte 5 is " + antwoord);
-
-        //antwoord = oppervlakteKubus(5); // Je kunt bij de implementatie van deze method een nieuwe berekening doen, of `oppervlakteVierkant()` hergebruiken, of `oppervlakteDoos()` hergebruiken.
-        System.out.println("De oppervlakte van een kubus met zijden van 5 cm is " + antwoord);
     }
 
-    // nieuwe methods komen hier
+    public static int Retangle(int a, int b) {
+        return a * b;
+    }
+
+    public static int four(int a, int b, int c, int d) {
+        return a + b + c + d;
+    }
+
+    public static int box(int lengte, int breedte, int hoogte) {
+        return lengte * breedte * hoogte;
+    }
+
+
+
 
 }

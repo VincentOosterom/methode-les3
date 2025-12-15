@@ -6,17 +6,74 @@ public class B_Dialoog {
         // De methode heeft als parameter de tekst die gesproken moet worden.
         // De volgende zin wordt steeds door de ander gesproken.
         // Vervang System.out.println() steeds door je eigen method.
-        System.out.println("Hey"); //Bert
-        System.out.println("Hey"); //Ernie
-        System.out.println("Welcome to this wonderful conversation");
-        System.out.println("Thnx, I'm looking forward to it");
-        System.out.println("How about this weather?");
-        System.out.println("I really don't mind the cold....");
-        System.out.println("And did you see that random program on that random channel?");
-        System.out.println("Well... I did watch a random program on a random channel...");
-        System.out.println("Thank you for a wonderful conversation!");
-        System.out.println("Cya");
+
+        bertSays();
+        hello();
+        ernieSays();
+        hello();
+        bertSays();
+        welcome();
+        ernieSays();
+        thankYou();
+        bertSays();
+        weather();
+        ernieSays();
+        coldDays();
+        bertSays();
+        channel();
+        ernieSays();
+        program();
+        bertSays();
+        bye();
+        ernieSays();
+        sayBye();
     }
 
     // nieuwe methods komen hier
+
+    public static void bertSays() {
+        System.out.println("Bert says: ");
+    }
+
+    public static void ernieSays() {
+        System.out.println("Ernie says: ");
+    }
+
+    public static void hello() {
+        System.out.println("Hey");
+    }
+
+    public static void welcome() {
+        System.out.println("Welcome to this wonderful conversation");
+    }
+
+    public static void thankYou() {
+        System.out.println("Thnx, I'm looking forward to it");
+    }
+
+    public static void weather() {
+        System.out.println("How about this weather?");
+    }
+
+    public static void coldDays() {
+        System.out.println("I really don't mind the cold....");
+    }
+
+    public static void channel() {
+        System.out.println("And did you see that random program on that random channel?");
+    }
+
+    public static void program() {
+        System.out.println("Well... I did watch a random program on a random channel...");
+    }
+
+    public static void bye() {
+        System.out.println("Thank you for a wonderful conversation!");
+    }
+
+    public static void sayBye() {
+        System.out.println("Cya");
+    }
+
+
 }
